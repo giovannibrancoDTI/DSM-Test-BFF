@@ -5,7 +5,7 @@ import { IUserRepository } from "./interfaces/IUserRepository";
 class UserRepository implements IUserRepository {
   async getAllUsers() {
     const response = await axios.get(
-      "https://jsonplaceholder.typicode.com/users"
+      "https://jsonplaceholder.typicode.com/users",
     );
 
     if (response.status !== 200) throw new Error("Failed to fetch users");
