@@ -9,14 +9,14 @@
     "prettier:check": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "prettier:check:all": "prettier --check .",
-    "prettier:fix:all": "prettier --write .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --detectOpenHandles --forceExit --coverage"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.1",
     "@types/axios": "^0.9.36",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.15.3",
     "@types/swagger-ui-express": "^4.1.8",
     "@typescript-eslint/eslint-plugin": "^8.31.0",
@@ -25,7 +25,9 @@
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-prettier": "^5.2.6",
     "globals": "^16.0.0",
+    "jest": "^29.7.0",
     "prettier": "^3.5.3",
+    "ts-jest": "^29.3.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.31.0"
