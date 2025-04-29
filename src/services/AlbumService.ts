@@ -1,9 +1,9 @@
 import { AlbumModel } from "@/domain/AlbumModel";
+import { IPhotoRepository } from "@/repositories/interfaces/IPhotoRepository";
 import AlbumRepository from "../repositories/AlbumRepository";
 import { IAlbumRepository } from "../repositories/interfaces/IAlbumRepository";
+import PhotoRepository from "../repositories/PhotoRepository";
 import { IAlbumService } from "./interfaces/IAlbumService";
-import { IPhotoRepository } from "@/repositories/interfaces/IPhotoRepository";
-import PhotoRepository from "@/repositories/PhotoRepository";
 
 class AlbumService implements IAlbumService {
   constructor(
